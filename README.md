@@ -1,7 +1,4 @@
 # feuerstein.dev
-[![Test](https://avatars.githubusercontent.com/u/87233796?v=4)](https://feuerstein.dev)
-
-
 
 This is the Repo for the official [feuerstein.dev](https://feuerstein.dev) website. It's build using [docusaurus](https://docusaurus.io). The real Webseite is build from this Repo, every time I make an significant change. If you find any wrong information or information that seems wrong, please make sure to contact me, or open a issue on this [Github repo](https://github.com/einfeuerstein/feuerstein.dev). I hope you'll have fun with the content on my website.
 
