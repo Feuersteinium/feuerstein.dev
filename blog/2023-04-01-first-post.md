@@ -1,7 +1,7 @@
 ---
-slug: my-new-website
-title: My new Website
+slug: still-unknown
+title: Unknown
 authors: einfeuerstein
-tags: [organisatorisches]
+tags: [blog]
 ---
 This is the first Blog post on my new Website :D

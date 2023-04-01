@@ -72,7 +72,7 @@ const config = {
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/docs', label: 'Docs', position: 'left'},
-          {to: '/docs', label: 'Science & Education', position: 'left'},
+          {to: '/science', label: 'Science & Education', position: 'left'},
         ],
       },
       footer: {
