@@ -96,7 +96,7 @@ const config = {
             ],
           },
           {
-            title: 'Me on the Internet',
+            title: 'Me on the internet',
             items: [
               {
                 label: 'Github',
@@ -117,11 +117,15 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'About this page',
             items: [
               {
-                label: 'Code of this page',
+                label: 'Sourcecode',
                 href: 'https://github.com/einfeuerstein/feuerstein.dev/',
+              },
+              {
+                label: 'Impressum',
+                href: '/impressum',
               },
             ],
           },

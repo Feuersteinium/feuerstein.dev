@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1053.59375 580.8378402283663" width="1053.59375" height="580.8378402283663">
+  <!-- svg-source:excalidraw -->
+  
+  <defs>
+    <style class="style-fonts">
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://excalidraw.com/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://excalidraw.com/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1053.59375" height="580.8378402283663" fill="#ffffff"></rect><g transform="translate(139.79684448242188 10) rotate(0 364.8008117675781 248.3189201141831)"><text x="364.8008117675781" y="0" font-family="Cascadia, Segoe UI Emoji" font-size="415.06221175479635px" fill="#862e9c" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">404</text></g><g transform="translate(10 527.6378402283663) rotate(0 516.796875 21.599999999999994)"><text x="516.796875" y="0" font-family="Cascadia, Segoe UI Emoji" font-size="36px" fill="#862e9c" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">The atoms storing this content are not known yet.</text></g></svg>
