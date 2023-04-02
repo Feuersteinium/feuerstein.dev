@@ -7,16 +7,16 @@ on:
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
-jobs:
-  website-build:
-    name: website-build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 19.8.1
-          cache: npm
+#jobs:
+#  website-build:
+#    name: website-build
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: 19.8.1
+#          cache: npm
 
    #   - name: Install dependencies
    #     run: npm ci
