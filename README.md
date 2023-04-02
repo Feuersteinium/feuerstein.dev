@@ -1,22 +1,16 @@
 # feuerstein.dev
 
-This is the Repo for the official [feuerstein.dev](https://feuerstein.dev) website. It's built using [docusaurus](https://docusaurus.io). The real Webseite is built from this Repo,automatically via Github Actions. Github Actions will push it to the Webserver after the building process is done. If you find any wrong information or information that seems wrong, please make sure to contact me, or open a issue on this [Github repo](https://github.com/einfeuerstein/feuerstein.dev). I hope you'll have fun with the content on my website.
+This is the Repo for the official [feuerstein.dev](https://feuerstein.dev) website. It's build using a static site generator. At this time, its only an Idea and needs to be started. But there are already some Layout-Ideas, which are shown here:
 
-## Build it for yourself locally:
-### Requirements
-- nodejs
-- npm
-- git
+![header-and-footer.svg]
 
-### Installation
+For this reason the feuerstein.dev website is running a placeholder, which will be replaced as soon as possible with the first prototype website. This repo was made for transparency, so that everyone can see, which code is running on my Webserver. Another purpose is to report wrong information. If you find any information, that seems wrong, don't be shy and contact me, or open an issue :D
 
-1. Clone the Repo (or download it).
+## Structure
 
-2. Start docusaurus:
-`npx docusaurus start` or
-`npm run start`
+The Website is using the following structure:
 
-  Another alternative would be to run `npm run build` and then run `npm run serve`
+![structure.svg]
 
-
-3. Have fun with the Repo
+## Building process
+This Website is built using Github Actions. Every time I push a new commit to the main branch, the building process will start and the result will be pushed to my webserver afterwards. So if something has changed. you should see it usually in under 10 minutes. This number can rise up, as the websites grows form time to time.
