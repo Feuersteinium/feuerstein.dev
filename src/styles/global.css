@@ -8,16 +8,20 @@
     font-family: cascadia;
     src: url(/fonts/cascadiacode.ttf);
   }
- 
+
+
+@font-face {
+    font-family: anton;
+    src: url(/fonts/anton-regular.ttf);
+    font-weight: 900;
+  }
+
 /* 
 @font-face {
     font-family: dangrek;
     src: url(Dangrek-Regular.ttf);
   }
 
- @font-face {
-    font-family: anton;
-    src: url(Anton-Regular.ttf)
   
  @font-face {
     font-family: roboto-slab;
