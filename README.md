@@ -5,7 +5,7 @@
 
 # feuerstein.dev
 This is the source code of my Website. The site is currently under heavy development and a placeholder is running instead of the website.
-
+The Code in this Repo is currently just some testing as i am still learning astro.
 
 The documentation section of my site can be found [here](https://github.com/feuersteinium/docs)
 
