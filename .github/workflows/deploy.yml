@@ -38,12 +38,13 @@ jobs:
           run: npm install astro
         - name: Building Website
           run: npm run build
-    #    - name: Write Website to Cache
-    #      uses: actions/cache@v3
-    #      env:
-    #        cache-name: website-build
-    #      with:
-    #        path: ./dist
+        - name: Write Website to Cache
+          uses: actions/cache@v3
+          env:
+            cache-name: website-build
+          with:
+            path: ./dist
+            key: build-cache
           
 # Deploy the Website (Won't do anything)
         

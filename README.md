@@ -14,6 +14,6 @@ The documentation section of my site can be found [here](https://github.com/feue
 All **content** on the website, including text, images, and other media, is licensed under the **CC BY-SA License**. All **Source Code** of the Website is Licensed under the **MIT License**.
 
 Fonts used:
-    - [LilitaOne](https://fonts.google.com/specimen/Lilita+One)
+      [LilitaOne](https://fonts.google.com/specimen/Lilita+One)
     - [Anton Regular](https://fonts.google.com/specimen/Anton)
     - [Cascadia Code](https://github.com/microsoft/cascadia-code)
