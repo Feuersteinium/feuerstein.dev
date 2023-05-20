@@ -20,7 +20,7 @@ jobs:
         - name: Installing Astro
           run: npm install astro
         - name: Testing Website
-          run: npm astro check
+          run: npm run astro check
 
 # Build the website and cache it >> https://docs.astro.build/de/reference/cli-reference/#astro-build
 
