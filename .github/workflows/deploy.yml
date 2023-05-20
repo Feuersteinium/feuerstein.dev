@@ -51,7 +51,7 @@ jobs:
 # Deploy the Website (Won't do anything)
         
     website-deployment:
-      runs-on: ubuntu-latest
+      runs-on: self-hosted
       needs: website-build
       steps:
         - name: Restore Website from Cache
@@ -61,13 +61,5 @@ jobs:
           with:
              path: ./dist
              key: build-cache
-        - name: webfactory/ssh-agent
-          uses: webfactory/ssh-agent@v0.8.0
-          with:
-            ssh-private-key: ${{secrets.DEPLOY_KEY}}
-        - name: Website Deployment
-          run: rsync -avx --rsh='ssh -p${{secrets.PORT}}'  --delete --exclude '.ssh' public/ ${{secrets.DEPLOY_USERNAME}}@${{secrets.DEPLOY_SERVER}}:./
-          env:
-            DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
-            DEPLOY_USERNAME: ${{ secrets.DEPLOY_USERNAME }}
-
+        - name: ls -l
+          run: ls -l
