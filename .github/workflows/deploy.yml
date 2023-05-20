@@ -17,6 +17,7 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: '19'
+            cache: 'npm'
         - name: Installing Astro
           run: npm install astro
         - name: Testing Website
@@ -34,12 +35,13 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: '19'
+            cache: 'npm'
         - name: Installing Astro
           run: npm install astro
         - name: Building Website
           run: npm run build
         - name: Write Website to Cache
-          uses: actions/cache@v3
+          uses: actions/cache/save@v3
           env:
             cache-name: website-build
           with:
@@ -52,6 +54,11 @@ jobs:
       runs-on: ubuntu-latest
       needs: website-build
       steps:
-        - run: echo Test
-        - run: ls
-      
+        - name: Write Website to Cache
+          uses: actions/cache/restore@v3
+          env:
+             cache-name: website-build
+          with:
+             path: .
+             key: build-cache
+        - run: ls -l
