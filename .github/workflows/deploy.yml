@@ -61,4 +61,5 @@ jobs:
           with:
              path: ./dist
              key: build-cache
-        - run: ls -l
+        - run: cd dist && ls -l 
+        - run: echo Ready to deploy!
