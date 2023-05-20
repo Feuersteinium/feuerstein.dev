@@ -59,6 +59,6 @@ jobs:
           env:
              cache-name: website-build
           with:
-             path: .
+             path: ./dist
              key: build-cache
         - run: ls -l
