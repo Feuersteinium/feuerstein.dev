@@ -65,8 +65,6 @@ jobs:
           uses: webfactory/ssh-agent@v0.8.0
           with:
             ssh-private-key: ${{secrets.DEPLOY_KEY}}
-        - run: echo ${{secrets.DEPLOY_KEY}}  
-
         - name: Website Deployment
           run: rsync -avx --rsh='ssh -p${{secrets.PORT}}'  --delete --exclude '.ssh' public/ {{$DEPLOY_USERNAME}}@{{$DEPLOY_SERVER}}:./
           env:
