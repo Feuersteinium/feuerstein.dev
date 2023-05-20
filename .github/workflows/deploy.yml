@@ -62,4 +62,4 @@ jobs:
              path: ./dist
              key: build-cache
         - name: ls -l
-          run: ls -l
+          run: cd dist && ls -l
