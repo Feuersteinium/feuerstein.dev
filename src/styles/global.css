@@ -63,13 +63,6 @@ h6 {
     font-size: 1.79em;
 }
 
-
-
-
-
-
-
-
 .inline {
     display: inline-block;
     }
@@ -78,12 +71,4 @@ h6 {
 
 p {
     font-family: cascadia;
-}
-
-
-
-
-header {
-    font-family: 'lilita';
-    font-weight: 700;
 }

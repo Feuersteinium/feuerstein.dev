@@ -5,8 +5,28 @@ on:
     branches:
       - master
 jobs:
+
+# Testing the site configuration with astro check >> https://docs.astro.build/de/reference/cli-reference/#astro-check
+
+    website-check:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout Branch
+          uses: actions/checkout@v3
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '19'
+        - name: Installing Astro
+          run: npm install astro
+        - name: Testing Website
+          run: npm run check
+
+# Build the website and cache it >> https://docs.astro.build/de/reference/cli-reference/#astro-build
+
     website-build:
       runs-on: ubuntu-latest
+      needs: website-check
       steps:
         - name: Checkout Branch
           uses: actions/checkout@v3
@@ -18,12 +38,14 @@ jobs:
           run: npm install astro
         - name: Building Website
           run: npm run build
-        - name: Write Website to Cache
-          uses: actions/cache@v3
-          env:
-            cache-name: website-build
-          with:
-            path: ./dist
+    #    - name: Write Website to Cache
+    #      uses: actions/cache@v3
+    #      env:
+    #        cache-name: website-build
+    #      with:
+    #        path: ./dist
+          
+# Deploy the Website (Won't do anything)
         
     website-deployment:
       runs-on: ubuntu-latest
