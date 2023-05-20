@@ -1,0 +1,25 @@
+name: Autonomous deployment
+run-name: Website Deployment
+on:
+  push:
+    branches:
+      - master
+jobs:
+    website-build:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+            node-version: '19'
+        - run: node -v
+        - run: npm install astro
+        - run: npm run build
+        - run: echo "done!"
+        
+    website-deployment:
+      runs-on: ubuntu-latest
+      needs: website-build
+      steps:
+        - run: echo Test
+      
