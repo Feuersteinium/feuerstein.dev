@@ -8,14 +8,22 @@ jobs:
     website-build:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
+        - name: Checkout Branch
+          uses: actions/checkout@v3
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
           with:
             node-version: '19'
-        - run: npm install astro
-        - run: npm run build
-        - run: ls
-        - run: cd dist && ls -a
+        - name: Installing Astro
+          run: npm install astro
+        - name: Building Website
+          run: npm run build
+        - name: Write Website to Cache
+          uses: actions/cache@v3
+          env:
+            cache-name: website-build
+          with:
+            path: ./dist
         
     website-deployment:
       runs-on: ubuntu-latest
