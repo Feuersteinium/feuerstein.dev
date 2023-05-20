@@ -67,7 +67,7 @@ jobs:
             ssh-private-key: ${{secrets.DEPLOY_KEY}}
 
         - name: Website Deployment
-        run: rsync -avx --delete --exclude '.ssh' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
-        env:
-          DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
-          DEPLOY_USERNAME: ${{ secrets.DEPLOY_USERNAME }}
+          run: rsync -avx --delete --exclude '.ssh' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
+          env:
+            DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
+            DEPLOY_USERNAME: ${{ secrets.DEPLOY_USERNAME }}
