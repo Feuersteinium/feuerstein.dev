@@ -15,6 +15,8 @@ jobs:
         - run: npm install astro
         - run: npm run build
         - run: ls
+        - run: cd dist
+        - run: ls -la
         
     website-deployment:
       runs-on: ubuntu-latest
