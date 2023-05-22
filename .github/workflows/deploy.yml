@@ -22,8 +22,6 @@ jobs:
           run: npm install astro
         - name: Testing Website
           run: npm run astro check
-        - name: Cache Ver
-          run: echo ${{ secrets.CACHE_VERSION }}
 
 # Build the website and cache it >> https://docs.astro.build/de/reference/cli-reference/#astro-build
 
@@ -42,13 +40,17 @@ jobs:
           run: npm install astro
         - name: Building Website
           run: npm run build
+        - name: Get Date
+          id: get-date
+          run: echo "date=$(/bin/date -u "+%Y%m%d")" >> $GITHUB_OUTPUT
+          shell: bash
         - name: Write Website to Cache
           uses: actions/cache/save@v3
           env:
             cache-name: website-build
           with:
             path: ./dist
-            key: build-cache
+            key: build-cache-${{steps.get-date.outputs.date}}
           
 # Deploy the Website (Won't do anything)
         
@@ -62,6 +64,6 @@ jobs:
              cache-name: website-build
           with:
              path: ./dist
-             key: build-cache
+             key: build-cache-${{steps.get-date.outputs.date}}
         - name: ls -l
           run: cd dist && ls -l
