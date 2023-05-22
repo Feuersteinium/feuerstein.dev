@@ -1,0 +1,22 @@
+---
+import '../styles/global.css'
+const pageTitle = "Test"
+---
+
+
+<html lang="en">
+	<head> c
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<Navigation />
+		<h1>{pageTitle}</h1>
+        <ul>
+            <li><a href="/posts/post-1">Post1</a></li>
+        </ul>
+	</body>
+</html>
