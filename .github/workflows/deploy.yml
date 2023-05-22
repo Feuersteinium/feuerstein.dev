@@ -59,7 +59,7 @@ jobs:
       needs: website-build
       steps:
         - name: Remove old Site
-          run: cd dist && rm -rf .
+          run: cd dist && rm -rf $(pwd)
         - name: Restore Website from Cache
           uses: actions/cache/restore@v3
           env:
