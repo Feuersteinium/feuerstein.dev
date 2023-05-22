@@ -67,7 +67,5 @@ jobs:
           with:
              path: ./dist
              key: build-cache-${{steps.get-date.outputs.date}}
-        - name: Move Cache to Production
-          run: mv ./dist/* ./prod/
         - name: ls -l
           run: cd dist && ls -l
