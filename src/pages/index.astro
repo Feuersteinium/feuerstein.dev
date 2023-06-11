@@ -1,8 +1,9 @@
 ---
 const pageTitle = "Welcome"
 import '../styles/global.css'
-import Navigation from '../components/navigation.astro'
 import Footer from '../components/footer.astro'
+import Header from '../components/header.astro'
+import '../styles/index.css'
 ---
 
 <html lang="en">
@@ -14,8 +15,11 @@ import Footer from '../components/footer.astro'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<Navigation />
-		<h1>{pageTitle}</h1>
+		<Header />
+		<h1></h1>
+		<section id="one">
+			<p>Test</p>
+		</section>
 		<Footer />
 	</body>
 </html>

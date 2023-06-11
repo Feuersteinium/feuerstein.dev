@@ -1,7 +1,6 @@
 ---
 const pageTitle = "Blog"
 import '../styles/global.css'
-import Navigation from '../components/navigation.astro'
 ---
 
 <html lang="en">
@@ -13,10 +12,9 @@ import Navigation from '../components/navigation.astro'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<Navigation />
 		<h1>{pageTitle}</h1>
         <ul>
-            <li><a href="/posts/post-1">Post1</a></li>
+            <li><a href="/blog/post-1">Post1</a></li>
         </ul>
 	</body>
 </html>
