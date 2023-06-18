@@ -40,11 +40,11 @@ jobs:
           run: npm install astro
         - name: Building Website
           run: npm run build
-       - name: Upload Build as Artifact 
-         uses: actions/upload-artifact@v3
-         with:
-          name: build
-          path: ./dist
+        - name: Upload Build as Artifact 
+          uses: actions/upload-artifact@v3
+          with:
+            name: build
+            path: ./dist
 
           
 # Deploy the Website (Won't do anything)
