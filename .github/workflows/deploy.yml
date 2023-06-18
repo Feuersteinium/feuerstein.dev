@@ -62,6 +62,8 @@ jobs:
           uses: actions/checkout@v3
           with:
             ref: deploy
+        - name: Remove old Website from Cache
+          run: rm -rf build.tar.gz
         - name: Restore Website from Cache
           uses: actions/cache/restore@v3
           env:
@@ -71,7 +73,6 @@ jobs:
              key: build-cache-${{steps.get-date.outputs.date}}
         - name: Push to Deploy Branch
           run: |
-            ls -la
             git config user.name github-actions
             git config user.email github-actions@github.com
             git add .
