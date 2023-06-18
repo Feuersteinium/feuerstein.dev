@@ -40,32 +40,27 @@ jobs:
           run: npm install astro
         - name: Building Website
           run: npm run build
-        - name: Get Date
-          id: get-date
-          run: echo "date=$(/bin/date -u "+%s")" >> $GITHUB_OUTPUT
-          shell: bash
-        - name: Write Website to Cache
-          uses: actions/cache/save@v3
-          env:
-            cache-name: website-build
-          with:
-            path: ./dist
-            key: build-cache-${{steps.get-date.outputs.date}}
+       - name: Upload Build as Artifact 
+         uses: actions/upload-artifact@v3
+         with:
+          name: build
+          path: ./dist
+
           
 # Deploy the Website (Won't do anything)
         
-    website-deployment:
-      runs-on: self-hosted
-      needs: website-build
-      steps:
-        - name: Remove old Site
-          run: cd dist && rm -rf $(pwd)
-        - name: Restore Website from Cache
-          uses: actions/cache/restore@v3
-          env:
-             cache-name: website-build
-          with:
-             path: ./dist
-             key: build-cache-${{steps.get-date.outputs.date}}
-        - name: ls -l
-          run: cd dist && ls -l
+   # website-deployment:
+   #   runs-on: self-hosted
+   #   needs: website-build
+   #   steps:
+   #     - name: Remove old Site
+   #       run: cd dist && rm -rf $(pwd)
+   #     - name: Restore Website from Cache
+   #       uses: actions/cache/restore@v3
+   #       env:
+   #          cache-name: website-build
+   #       with:
+   #          path: ./dist
+   #          key: build-cache-${{steps.get-date.outputs.date}}
+   #     - name: ls -l
+   #       run: cd dist && ls -l
