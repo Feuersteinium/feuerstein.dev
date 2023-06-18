@@ -67,7 +67,8 @@ jobs:
           with:
              path: ./dist
              key: build-cache-${{steps.get-date.outputs.date}}
-        - name: mv ./dist/* .
+        - name: Move Files  
+          run: mv ./dist/* .
         - name: Push to Deploy Branch
           run: |
             git config user.name github-actions
