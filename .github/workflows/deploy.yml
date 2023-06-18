@@ -44,12 +44,14 @@ jobs:
           id: get-date
           run: echo "date=$(/bin/date -u "+%s")" >> $GITHUB_OUTPUT
           shell: bash
+        - name: Creating Tarball
+          run: tar cfvz build.tar.gz ./dist
         - name: Write2Cache
           uses: actions/cache/save@v3
           env:
             cache-name: website-build
           with:
-            path: ./dist
+            path: build.tar.gz
             key: build-cache-${{steps.get-date.outputs.date}}
        
     build-push:
@@ -65,12 +67,11 @@ jobs:
           env:
              cache-name: website-build
           with:
-             path: ./dist
+             path: build.tar.gz
              key: build-cache-${{steps.get-date.outputs.date}}
-        - name: Move Files  
-          run: mv ./dist/* .
         - name: Push to Deploy Branch
           run: |
+            ls -la
             git config user.name github-actions
             git config user.email github-actions@github.com
             git add .
