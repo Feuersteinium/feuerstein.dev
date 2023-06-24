@@ -1,0 +1,28 @@
+---
+const pageTitle = "Projects"
+import '../styles/global.css'
+import Footer from '../components/footer.astro'
+import Header from '../components/header.astro'
+import '../styles/index.css'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<Header />
+		<h1>Projects</h1>
+		<p>Funkturm ist ein Monorepository für meine Config Files und meinen selbst geschriebenen Code. Damit dient es als meine "Heimat" in der Digitalen Welt. Work in Progress wird hier großgeschrieben, da es dauerhaft Änderungen gibt!</p>
+        <h2>FAQ</h2>
+        <p><strong>Warum ein FAQ, wenn niemand diese Fragen je stellt?</strong></p>
+        <p>Weil ich das so beschlossen habe :D</p>
+        <p><strong>Woher der Name?</strong></p>
+        <p>Zum einen klingt der Name meiner Meinung nach super. Man kann aber auch sagen, dass ein Funkturm als Zuhause aller Datenübertragungen dient, was dieses Monorepository eben mir eben ermöglichen soll.</p>
+		<Footer />
+	</body>
+</html>
