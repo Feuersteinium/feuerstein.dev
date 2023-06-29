@@ -1,0 +1,26 @@
+#footer {
+    height: 90%;
+    background-color: #3C6E71;
+}
+
+.footer-h {
+    text-decoration: none;
+    font-family: anton;
+    font-size: 1.25rem;
+    color: #272626;
+}
+
+
+footer, a {
+    text-decoration: none;
+    color:#272626;
+    font-size: 1rem;
+}
+
+.left-footer {
+    margin-left: 33%;
+}
+
+.right-footer {
+    margin-left: 25%;
+}   

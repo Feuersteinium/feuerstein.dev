@@ -17,3 +17,9 @@ Fonts used:
       [LilitaOne](https://fonts.google.com/specimen/Lilita+One)
     - [Anton Regular](https://fonts.google.com/specimen/Anton)
     - [Cascadia Code](https://github.com/microsoft/cascadia-code)
+
+Color Palette:
+  - Cyan [#3C6E71]
+  - Purple [#291528]
+  - Grey [#272626]
+

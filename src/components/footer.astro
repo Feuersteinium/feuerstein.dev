@@ -1,9 +1,15 @@
 ---
 import Social from './social.astro'
+import '../styles/footer.css'
 ---
 
 
-<footer>
-    <Social platform="Github" username="feuersteinium"/>
-    <a href="https://mastodon.online/@feuerstein" rel="me"><p>Mastodon</p></a>
+
+
+<footer id="footer">
+    <p class="inline footer-h left-footer">On the Internet</p><p class="inline footer-h right-footer">About this Site</p>
+    <br>
+    <a class="left-footer" "href="https://github.com/feuersteinium">Github</a> <a class="right-footer" href="https://github.com/feuersteinium/feuerstein.dev">Source Code</a>
+    <br>
+    <a class="left-footer" href="https://mastodon.online/@feuerstein" rel="me">Mastodon</a>
 </footer>
