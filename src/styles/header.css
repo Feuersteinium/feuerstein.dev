@@ -1,12 +1,27 @@
-#shift {
-    margin-left:80%;
-    margin-top: 1%
+#header {
+    height: 80px;
+    width: 100%;
+    margin: 0;
     
 }
-#shift a {
-    font-size: 1.5rem;
-    color: #272626;
+
+.hfont {
     text-decoration: none;
     font-family: anton;
-    margin: 2.5%;
+    color: #272626;
+}
+
+#pp {
+    height: 2rem;
+    vertical-align: middle;
+}
+
+
+
+.right {
+    margin-left: 70%;
+}
+
+section {
+    height: 100%;
 }
