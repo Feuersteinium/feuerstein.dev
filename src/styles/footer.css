@@ -1,7 +1,3 @@
-#footer {
-    height: 150px;
-    background-color: #3C6E71;
-}
 
 .footer-h {
     text-decoration: none;
@@ -10,17 +6,44 @@
     color: #272626;
 }
 
-
-footer, a {
+.element {
     text-decoration: none;
-    color:#272626;
-    font-size: 1rem;
+    font-family: martian;
+    font-size: 1em;
+    color: #272626;
+    font-weight: bold;
 }
 
-.left-footer {
-    margin-left: 33%;
+
+
+.container {
+    display: flex;
+    align-items: top;
+    width: 100%;
+    height: 200px;
+    background-color: #3C6E71;
+    position: fixed;
+    bottom: 0;
 }
 
-.right-footer {
-    margin-left: 25%;
-}   
+
+#fone {
+    flex-grow: 2;
+}
+
+#ftwo {
+}
+
+
+#fthree {
+    flex-grow: 0.5;
+}
+
+#ffour {
+    
+}
+
+#ffive {
+    flex-grow: 2;
+}
+

@@ -4,9 +4,29 @@
     justify-content: flex-end;
 }
 
-
-.hfont {
-    font-family: anton;
+.hfont a {
+    text-decoration: none;
     color: #272626;
+    font-family: anton;
+    font-size: 1.35em;
 }
-    
+
+#spacing {
+    flex-grow: 4;
+}
+
+
+.margin {
+    margin: 1%;
+}
+
+#htwo {
+    height: 50px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#hone {
+    margin-right: 2%;
+    margin-left: 1%;
+}
