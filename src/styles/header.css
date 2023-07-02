@@ -1,27 +1,12 @@
-#header {
-    height: 80px;
-    width: 100%;
-    margin: 0;
-    
+.fb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
+
 .hfont {
-    text-decoration: none;
     font-family: anton;
     color: #272626;
 }
-
-#pp {
-    height: 2rem;
-    vertical-align: middle;
-}
-
-
-
-.right {
-    margin-left: 70%;
-}
-
-section {
-    height: 100%;
-}
+    
