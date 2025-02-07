@@ -1,0 +1,26 @@
+# Hello Robot, I hope you will have a great time on my website. Please consider the following rules, because its very rude to bypass them and you are a nice robot, aren't you?
+
+User-agent: *
+Disallow: /fonts/
+Disallow: /impressum
+Disallow: /pgp.asc
+Disallow: /notes/
+
+
+
+# Greetings from Niklas
+# Enjoy your stay
+
+
+# Here is a little easter egg story:
+# There once was a little robot called Friend-ly living on a little muddy hill next to his town.
+# He was a very friendly and famous robot and crawling the web in his free time searching for funny
+# posts on Mastodon. Every time he found one, he was happy.
+# But one day he recognized that the best thing about crawling the web are the connections to real humans.
+# From this day on he opened Mastodon to communicate with his human friends instead of crawling the web
+# to find new posts. 
+# And we as humans should do either.
+# Find new friends
+# Start something new
+# Make the world better
+# [Work, Love, Spent time] Together (not against)
